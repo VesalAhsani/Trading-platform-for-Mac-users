@@ -12,6 +12,36 @@ To open the trading platform outside of Pycharm on a Mac, you need to create a n
 
 There is a zip file configured for Mac users. It should look nice if you are on Mac; however you may need to adjust some parameters!
 
+SQLite is a popular choice for a database management system, especially for smaller projects or applications where a full-fledged database management system like MySQL or PostgreSQL may be overkill. One of the benefits of using SQLite is that it is self-contained and does not require a separate server process to be running, which makes it easy to set up and use.
+
+To create a connection to an SQLite database in Python, you can use the sqlite3 module, which is part of the Python Standard Library. Here is an example of how you can create a connection to an SQLite database and execute a simple SELECT statement to retrieve data from a table:
+
+```
+import sqlite3
+
+# Connect to the database
+conn = sqlite3.connect('database.db')
+
+# Create a cursor
+cursor = conn.cursor()
+
+# Execute a SELECT statement
+cursor.execute('SELECT * FROM table_name')
+
+# Fetch all rows from the SELECT statement
+rows = cursor.fetchall()
+
+# Iterate over the rows and print the column values
+for row in rows:
+    print(row['column_name'])
+
+# Close the connection
+conn.close()
+```
+Using the sqlite3.Row class as you mentioned allows you to access the data in each row as a dictionary, which can be more convenient than accessing the data as a tuple.
+
+As for the DB Browser for SQLite, it is a graphical tool that allows you to view, create, and edit SQLite databases. It is a useful tool for exploring and working with SQLite databases, and can be a helpful tool when you are working with SQLite in your Python projects.
+
 #### Required libraries:
 pandas==1.5.2
 
