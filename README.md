@@ -12,5 +12,11 @@ To open the trading platform outside of Pycharm on a Mac, you need to create a n
 
 There is a zip file configured for Mac users. It should look nice if you are on Mac; however you may need to adjust some parameters!
 
+#### Required libraries:
+pandas==1.5.2
+python_dateutil==2.8.2
+requests==2.28.1
+tkmacosx==1.0.5
+websocket_client==1.4.2
 
 ## For Windows:
