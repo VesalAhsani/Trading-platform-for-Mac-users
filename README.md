@@ -10,6 +10,10 @@ Using the tkmacosx library to change the background color of buttons, removing t
 
 To open the trading platform outside of Pycharm on a Mac, you need to create a new file with the .command file extension. In the file, you can use the command to navigate to the directory where the start.command file is located and the command that Pycharm uses to start the Python file. However, on Mac, you also need to add the permission for the current user to run the start.command file as an executable. This can be done by opening a Terminal from Pycharm and using the command ```chmod u+x start.command```. The ```u``` refers to the current user, the ```+``` adds a permission, and the ```x``` is the permission to execute. After running this command, the ```start.command``` file will be executable and you can run the platform by double-clicking on the file.
 
+<img width="1074" alt="Screen Shot 2022-12-26 at 6 26 55 PM" src="https://user-images.githubusercontent.com/25235989/209790608-5f2a567a-1144-4b36-b8ff-5c5527a80a6f.png">
+
+
+
 There is a zip file configured for Mac users. It should look nice if you are on Mac; however you may need to adjust some parameters!
 
 SQLite is a popular choice for a database management system, especially for smaller projects or applications where a full-fledged database management system like MySQL or PostgreSQL may be overkill. One of the benefits of using SQLite is that it is self-contained and does not require a separate server process to be running, which makes it easy to set up and use.
