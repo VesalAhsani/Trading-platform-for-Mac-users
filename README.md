@@ -10,7 +10,7 @@ Using the tkmacosx library to change the background color of buttons, removing t
 
 To open the trading platform outside of Pycharm on a Mac, you need to create a new file with the .command file extension. In the file, you can use the command to navigate to the directory where the start.command file is located and the command that Pycharm uses to start the Python file. However, on Mac, you also need to add the permission for the current user to run the start.command file as an executable. This can be done by opening a Terminal from Pycharm and using the command ```chmod u+x start.command```. The ```u``` refers to the current user, the ```+``` adds a permission, and the ```x``` is the permission to execute. After running this command, the ```start.command``` file will be executable and you can run the platform by double-clicking on the file.
 
-<img width="1074" alt="Screen Shot 2022-12-26 at 6 26 55 PM" src="https://user-images.githubusercontent.com/25235989/209790608-5f2a567a-1144-4b36-b8ff-5c5527a80a6f.png">
+<img width="1057" alt="Screen Shot 2022-12-26 at 6 27 16 PM" src="https://user-images.githubusercontent.com/25235989/209790797-c42e24d5-8aeb-456a-b22f-15a150f1ae3d.png">
 
 
 
@@ -45,6 +45,8 @@ conn.close()
 Using the sqlite3.Row class as you mentioned allows you to access the data in each row as a dictionary, which can be more convenient than accessing the data as a tuple.
 
 As for the DB Browser for SQLite, it is a graphical tool that allows you to view, create, and edit SQLite databases. It is a useful tool for exploring and working with SQLite databases, and can be a helpful tool when you are working with SQLite in your Python projects.
+
+
 
 #### Required libraries:
 pandas==1.5.2
